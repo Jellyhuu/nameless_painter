@@ -39,8 +39,6 @@
 <h1>Viviane Vangh</h1>
 <h2>"나는 단지 고흐의 이름이 아니라, 그의 그림자까지 넘어서고 싶었다."</h2>
 
-<button onclick="share()">share</button>
-
 <p>
     사람들은 진짜와 가짜를 구분한다고 믿죠. 하지만 그건 이름이 없을 때 이야기예요.<br>
     제가 그린 그림이 고흐의 이름으로 전시되자, 수백 명이 감탄했습니다.<br>
@@ -63,19 +61,4 @@
     (a name they will remember)
 </div>
 </body>
-<script>
-    const share = async () => {
-        try {
-            if (navigator.share) {
-                await navigator.share({
-                    title: 'helllo',
-                    url: 'https://git.crewmate.co.kr'
-                })
-                console.log('Successfully shared')
-            }
-        } catch (error) {
-            console.error('Error sharing', error)
-        }
-    }
-</script>
 </html>
